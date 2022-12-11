@@ -1,0 +1,64 @@
+/* 
+1rem = 16px || 100%
+1px = 16/100 = 6.25%
+10px = 6.25%*10 = 62.5%
+Now
+1rem = 10px || 62.5%
+*/
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+  
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--colorPrimary);
+    font-family: sans-serif;
+    padding-top: 8rem;
+}
+
+.app__container {
+    width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--transparentBackground);
+}
+
+.app__title {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: 2.4rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-weight: 700;
+    color: var(--colorSecondary);
+    font-family: 'Inter', sans-serif;
+    z-index: 100;
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 800px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 650px) {
+    html {
+        font-size: 28%;
+    }
+}

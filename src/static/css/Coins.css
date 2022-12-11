@@ -1,0 +1,107 @@
+/* coin lists container - START */
+.coin {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+/* coin lists container - END */
+
+/* coin item container - START */
+.coin__container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    background-color: rgba(25, 25, 25, 0.527);
+    backdrop-filter: blur(10px);
+    padding: 2rem 2rem 2rem 3.6rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.35s;
+}
+
+.coin__container:hover {
+    background-color: rgba(25, 25, 25, 0.27);
+}
+/* coin item container - END */
+
+/* coin image container - START */
+.coin__image-container {
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin__image {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 4rem;
+    border-radius: 1.2rem;
+}
+/* coin image container - END */
+
+/* coin item text - START */
+.coin__item {
+    color: var(--colorSecondary);
+    font-size: 1.4rem;
+    margin: 1rem;
+    width: 10rem;
+}
+
+.coin__item-start {
+    /* alighn text left for more responsiveness */
+    text-align: left;
+}
+
+.coin__item-end {
+    /* alighn text right for more responsiveness */
+    text-align: right;
+}
+
+.coin__item-up {
+    color: green;
+}
+
+.coin__item-down {
+    color: red;
+}
+/* coin item text - END */
+
+/* object blur below coin item - START */
+.blur {
+    position: absolute;
+    border-radius: 1rem;   
+}
+
+.blur__1 {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 2rem;
+    filter: blur(5rem);
+}
+
+.blur__1--loss {
+    background-color: red;
+}
+
+
+.blur__2 {
+    width: 10rem;
+    height: 1rem;
+    right: 50rem;
+    filter: blur(10rem);
+}
+
+.blur__1--profit {
+    background-color: green;
+    filter: 2rem;
+    height: 2rem;
+}
+
+.blur__2--profit {
+    background-color: green;
+    filter: 5rem;
+    height: 2rem;
+}
+
+/* object blur below coin item - END */
