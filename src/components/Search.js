@@ -4,7 +4,6 @@ import '../static/css/Search.css';
 const Search = ({ search, handleSearch }) => {
   return (
     <div className="search">
-      <i class="fa fa-search" aria-hidden="true"></i>
       <input
         className="search__input"
         type="search"
