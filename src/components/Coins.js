@@ -10,7 +10,7 @@ const Coins = ({ filterdCoins }) => {
       <div className="coin" key={coin.id}>
         <div className="coin__container">
           <div className="coin__image-container">
-            <img className="coin__image" src={coin.image}></img>
+            <img className="coin__image" src={coin.image} alt="coin"></img>
           </div>
 
           <div className="coin__item coin__item-start">{coin.name}</div>
