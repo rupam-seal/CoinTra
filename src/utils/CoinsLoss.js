@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const Loss = ({ percentage }) => {
+const Loss = memo(({ percentage }) => {
   return (
     // ========= blur item start =========
     <>
@@ -12,6 +12,6 @@ const Loss = ({ percentage }) => {
     </>
     // ========= blur item end =========
   );
-};
+});
 
 export default Loss;

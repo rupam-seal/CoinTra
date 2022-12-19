@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const Profit = ({ percentage }) => {
+const Profit = memo(({ percentage }) => {
   return (
     // ========= blur item start =========
     <>
@@ -12,6 +12,6 @@ const Profit = ({ percentage }) => {
     </>
     // ========= blur item loss =========
   );
-};
+});
 
 export default Profit;

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { memo } from 'react';
 import '../static/css/Search.css';
 
-const Search = ({ search, handleSearch }) => {
+const Search = memo(({ search, handleSearch }) => {
   return (
     <div className="search">
       <input
@@ -13,6 +13,6 @@ const Search = ({ search, handleSearch }) => {
       ></input>
     </div>
   );
-};
+});
 
 export default Search;

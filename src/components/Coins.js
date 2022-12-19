@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import '../static/css/Coins.css';
 import PercentageChange from '../utils/CoinsPercentageChange';
 
-const Coins = ({ filterdCoins }) => {
+const Coins = memo(({ filterdCoins }) => {
   const content = filterdCoins.map((coin) => {
     const symbol = coin.symbol;
     return (
@@ -62,6 +62,6 @@ const Coins = ({ filterdCoins }) => {
       <div>{content}</div>
     </>
   );
-};
+});
 
 export default Coins;

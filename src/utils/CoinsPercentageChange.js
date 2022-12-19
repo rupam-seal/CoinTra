@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { memo } from 'react';
 import Loss from './CoinsLoss';
 import Profit from './CoinsProfit';
 
-const PercentageChange = ({ percentage }) => {
+const PercentageChange = memo(({ percentage }) => {
   // percantage: changed in price in 24 hour
   var percentage = percentage;
   if (percentage < 0) {
@@ -12,6 +12,6 @@ const PercentageChange = ({ percentage }) => {
     // console.log('PROFIT');
     return <Profit percentage={percentage} />;
   }
-};
+});
 
 export default PercentageChange;
