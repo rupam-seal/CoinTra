@@ -15,8 +15,8 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: var(--colorPrimary);
-    font-family: sans-serif;
-    padding-top: 8rem;
+    font-family: 'Inter', sans-serif;
+    padding-top: 10rem;
 }
 
 /* MAIN CONTAINER */
@@ -29,21 +29,43 @@ body {
     flex-direction: column;
 }
 
-/* TITLE */
-.app__title {
-    backdrop-filter: blur(10px);
+.topbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    font-size: 2.4rem;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    backdrop-filter: blur(10px);
+    background-color: var(--transparentBackground);
+    z-index: 10;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--topbarBoxShadow)
+}
+
+.topbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 82rem;
+}
+
+.topbar__title {
+    font-size: 2.2rem;
     font-weight: 700;
     color: var(--colorSecondary);
-    font-family: 'Inter', sans-serif;
-    z-index: 100;
+    z-index: 1;
+}
+
+.table__header {
+    line-height: 3.4rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--colorSecondary);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 /* media query for responsiveness - START */
@@ -83,6 +105,10 @@ body {
     }
     .app__title {
         font-size: 2.6rem;
+    }
+
+    .app__container {
+        width: 82rem;
     }
 }
 /* media query for responsiveness - END */

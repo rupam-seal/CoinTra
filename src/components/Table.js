@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
-import '../static/css/Coins.css';
-import PercentageChange from '../utils/CoinsPercentageChange';
+import './css/Coins.css';
+import TablePercentageChange from './TablePercentageChange';
 
-const Coins = memo(({ filterdCoins }) => {
+const Table = memo(({ filterdCoins }) => {
   const content = filterdCoins.map((coin, index) => {
     const symbol = coin.symbol;
     return (
@@ -18,15 +18,17 @@ const Coins = memo(({ filterdCoins }) => {
             />
           </div>
 
-          <div className="table__item table__item-start">{coin.name}</div>
-          <div className="table__item table__item-symbol table__item-start">
+          <div className="table__item table__item-name">{coin.name}</div>
+          <div className="table__item table__item-symbol">
             {symbol.toUpperCase()}
           </div>
-          <div className="table__item table__item-end table__item-price">
-            ${coin.current_price}
+          <div className="table__item table__item-price">
+            ${parseFloat(coin.current_price).toFixed(2)}
           </div>
-          <div className="table__item table__item-end">${coin.market_cap}</div>
-          <div className="table__item table__item-end">
+          <div className="table__item table__item-market">
+            ${coin.market_cap}
+          </div>
+          <div className="table__item table__item-volume">
             ${coin.total_volume}
           </div>
           {/* 
@@ -35,7 +37,7 @@ const Coins = memo(({ filterdCoins }) => {
             if percentage is negetive it will return loss
             else it will return negetive value
           */}
-          <PercentageChange
+          <TablePercentageChange
             percentage={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
           />
         </div>
@@ -50,19 +52,12 @@ const Coins = memo(({ filterdCoins }) => {
         <div className="table__container">
           <div className="table__item table__item-number">No.</div>
           <div className="table__image-container"></div>
-
-          <div className="table__item table__item-start">Name</div>
-          <div className="table__item table__item-symbol table__item-start">
-            Symbol
-          </div>
-          <div className="table__item table__item-end table__item-price">
-            Price
-          </div>
-          <div className="table__item table__item-end">Market Cap</div>
-          <div className="table__item table__item-end">Volume(24h)</div>
-          <div className="table__item table__item-end table__item-24h">
-            24h %
-          </div>
+          <div className="table__item table__item-name">Name</div>
+          <div className="table__item table__item-symbol">Symbol</div>
+          <div className="table__item table__item-price">Price</div>
+          <div className="table__item table__item-market">Market Cap</div>
+          <div className="table__item table__item-volume">Volume(24h)</div>
+          <div className="table__item table__item-24h">24h %</div>
         </div>
       </div>
       <div>{content}</div>
@@ -70,4 +65,4 @@ const Coins = memo(({ filterdCoins }) => {
   );
 });
 
-export default Coins;
+export default Table;

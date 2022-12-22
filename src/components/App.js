@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Coins from './Coins';
+import Table from './Table';
 import Search from './Search';
-import '../static/css/App.css';
-import '../static/css/Colors.css';
+import './css/App.css';
+import './css/Colors.css';
+import Theme from '../utils/Theme';
 
 const App = () => {
   // coin item state
@@ -37,13 +38,19 @@ const App = () => {
   return (
     // ========= app container start =========
     <div className="app__container">
-      <div className="app__title">
-        Today's Cryptocurrency Prices by Market Cap
+      <div className="topbar">
+        <div className="topbar__container">
+          <span className="topbar__title">CoinTra</span>
+          <Theme />
+        </div>
       </div>
+      <span className="table__header">
+        Today's Cryptocurrency Prices by Market Cap
+      </span>
       {/* lifting the state up */}
       <Search search={search} handleSearch={handleSearch} />
       {/* passing filtered coins array to Coins component */}
-      <Coins filterdCoins={filterdCoins} />
+      <Table filterdCoins={filterdCoins} />
     </div>
     // ========= app container end =========
   );

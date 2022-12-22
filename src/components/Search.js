@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
-import '../static/css/Search.css';
+import './css/Search.css';
 import { RiSearch2Line } from 'react-icons/ri';
-import Theme from '../utils/Theme';
 
 const Search = memo(({ search, handleSearch }) => {
   return (
@@ -18,7 +17,6 @@ const Search = memo(({ search, handleSearch }) => {
           onChange={handleSearch}
         ></input>
       </div>
-      <Theme />
     </div>
   );
 });
