@@ -26,3 +26,9 @@
     font-size: 1.4rem;
     color: var(--colorSecondary);
 }
+
+@media (max-width: 400px) {
+    .search__input {
+        font-size: 2rem;
+    }
+}

@@ -57,8 +57,30 @@ body {
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 35%;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 30%;
+    }
+}
+
+@media (max-width: 400px) {
     html {
         font-size: 28%;
+    }
+
+    .app__title {
+        font-size: 2.6rem;
     }
 }

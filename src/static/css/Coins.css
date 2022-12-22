@@ -68,7 +68,7 @@
 /* coin item text - END */
 
 /* object blur below coin item - START */
-.blur {
+/* .blur {
     position: absolute;
     border-radius: 1rem;   
 }
@@ -102,6 +102,28 @@
     background-color: green;
     filter: 5rem;
     height: 2rem;
-}
+} */
 
 /* object blur below coin item - END */
+
+
+/* media query for responsiveness - START */
+@media (max-width: 400px) {
+    .coin__item {
+        font-size: 1.6rem;
+    }
+
+    .coin__image-container {
+        width: 6rem;
+    }
+
+    .coin__image {
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    .coin__item-end {
+        width: 10.3rem;
+    }
+}
+/* media query for responsiveness - END */
