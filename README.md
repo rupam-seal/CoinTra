@@ -1,9 +1,9 @@
-# Crypto currency price tracker
+# CoinTra
 A cryptocurrency finance price tracker app using React Hook (useEffect, useState) and Axios
 
 ## Live Site
 
-- https://crypto-coins-tracker.netlify.app/
+- https://cointra.netlify.app/
 
 ## Tech Stack
 
