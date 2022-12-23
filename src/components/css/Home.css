@@ -15,13 +15,16 @@ body {
     margin: 0;
     overflow-x: hidden;
     background-color: var(--colorPrimary);
-    font-family: 'Inter', sans-serif;
-    padding-top: 10rem;
+    /* 'Inter', */
+    font-family:  sans-serif;
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 /* MAIN CONTAINER */
-.app__container {
-    width: 82rem;
+.home {
+    max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -37,8 +40,6 @@ body {
     backdrop-filter: blur(10px);
     background-color: var(--transparentBackground);
     z-index: 10;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +50,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 82rem;
+    width: 120rem;
+    padding: 2rem;
 }
 
 .topbar__title {
@@ -61,54 +63,37 @@ body {
 
 .table__header {
     line-height: 3.4rem;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 2rem;
     color: var(--colorSecondary);
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
 
 /* media query for responsiveness - START */
-@media (max-width: 900px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 800px) {
-    html {
-        font-size: 45%;
-    }
-}
-
-@media (max-width: 700px) {
-    html {
-        font-size: 40%;
-    }
-}
-
-@media (max-width: 600px) {
-    html {
-        font-size: 35%;
-    }
-}
 
 @media (max-width: 500px) {
-    html {
-        font-size: 30%;
+    body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 6rem;
+    }
+
+    .topbar__container {
+        padding: 1rem;
+    }
+
+    .topbar__title {
+        font-size: 1.8rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .table__header {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
     }
 }
 
-@media (max-width: 450px) {
-    html {
-        font-size: 28%;
-    }
-    .app__title {
-        font-size: 2.6rem;
-    }
-
-    .app__container {
-        width: 82rem;
-    }
-}
 /* media query for responsiveness - END */
