@@ -4,7 +4,6 @@ import Profit from './CoinsProfit';
 
 const PercentageChange = memo(({ percentage }) => {
   // percantage: changed in price in 24 hour
-  var percentage = percentage;
   if (percentage < 0) {
     // console.log('LOSS');
     return <Loss percentage={percentage} />;

@@ -1,6 +1,43 @@
-:root {
-    --colorPrimary:#0e0e0e;
-    --colorSecondary:#F9F9F9;
+body.light {
+    --colorPrimary: rgb(248,250,253);
+    --colorSecondary:#222531;
+    --transparentBackground:rgba(248,250,253, 0.61);
 
+    --colorProfit:#16C784;
+    --colorLoss:#EA3943;
+
+    --coinItemBg:#fff;
+    --coinItemHover:rgba(255, 255, 255, 0.4);
+    --coinDividerColor: #eff2f5;
+
+    --searchBg:rgb(255, 255, 255);
+    --searchPlaceholderColor: #cacaca;
+    --searchBorderColor:transparent;
+    --searchIconColor:#cacaca;
+
+    --boxShadow:rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    --btnBoxShadow:rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    --btnBoxShadowHover:rgba(0, 0, 0, 0.07) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 0px 10px -5px;
+}
+
+body.dark {
+    --colorPrimary:rgb(27, 28, 32);
+    --colorSecondary:#F9F9F9;
     --transparentBackground:#0e0e0e61;
+
+    --colorProfit:#16C784;
+    --colorLoss:#EA3943;
+
+    --coinItemBg:rgb(23,23,26);
+    --coinItemHover:rgb(23,25,36);
+    --coinDividerColor: rgb(34,37,49);
+    
+    --searchBg:rgba(46, 46, 46, 0.527);
+    --searchPlaceholderColor: #4a4a4a;
+    --searchBorderColor:#363636;
+    --searchIconColor:#4a4a4a;
+
+    --boxShadow:rgba(255, 255, 255, 0.05) 0px 0px 0px 1px;
+    --btnBoxShadow:rgba(27, 28, 32, 0.8) 0px 20px 25px -5px, rgba(27, 28, 32, 0.04) 0px 10px 10px -5px;
+    --btnBoxShadowHover:rgba(27, 28, 32, 0.02) 0px 20px 25px -5px, rgba(27, 28, 32, 0.04) 0px 0px 10px -5px;
 }

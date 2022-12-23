@@ -7,63 +7,81 @@
 /* coin lists container - END */
 
 /* coin item container - START */
-.coin__container {
+.table__container {
     cursor: pointer;
     position: relative;
     display: flex;
-    background-color: rgba(25, 25, 25, 0.527);
+    background-color: var(--coinItemBg);
     backdrop-filter: blur(10px);
-    padding: 2rem 2rem 2rem 3.6rem;
+    padding: 2rem;
     margin-top: 1rem;
     border-radius: 0.5rem;
-    transition: all 0.35s;
 }
 
-.coin__container:hover {
-    background-color: rgba(25, 25, 25, 0.27);
+.table__container:hover {
+    background-color: var(--coinItemHover);
 }
 /* coin item container - END */
 
 /* coin image container - START */
-.coin__image-container {
-    width: 8rem;
+.table__image-container {
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.coin__image {
-    width: 2.4rem;
-    height: 2.4rem;
-    margin-right: 4rem;
+.table__image {
+    width: 2.6rem;
+    height: 2.6rem;
     border-radius: 1.2rem;
 }
 /* coin image container - END */
 
 /* coin item text - START */
-.coin__item {
+.table__item {
     color: var(--colorSecondary);
     font-size: 1.4rem;
-    margin: 1rem;
-    width: 10rem;
+    width: 14rem;
 }
 
-.coin__item-start {
-    /* alighn text left for more responsiveness */
-    text-align: left;
+.table__item-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
 }
 
-.coin__item-end {
-    /* alighn text right for more responsiveness */
+.table__item-price {
+    width: 7rem;
+}
+
+.table__item-start {
+    /* align text left for more responsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10.5rem;
+}
+
+.table__item-end {
+    /* align text right for more responsiveness */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
     text-align: right;
 }
 
-.coin__item-up {
-    color: green;
+.table__item-24h {
+    width: 8rem;
 }
 
-.coin__item-down {
-    color: red;
+.table__item-profit {
+    color: var(--colorProfit);
+}
+
+.table__item-loss {
+    color: var(--colorLoss);
 }
 /* coin item text - END */
 
@@ -108,22 +126,11 @@
 
 
 /* media query for responsiveness - START */
-@media (max-width: 400px) {
-    .coin__item {
+
+@media (max-width: 450px) {
+    .table__item {
         font-size: 1.6rem;
     }
-
-    .coin__image-container {
-        width: 6rem;
-    }
-
-    .coin__image {
-        width: 3.2rem;
-        height: 3.2rem;
-    }
-
-    .coin__item-end {
-        width: 10.3rem;
-    }
 }
+
 /* media query for responsiveness - END */

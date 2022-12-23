@@ -19,16 +19,17 @@ body {
     padding-top: 8rem;
 }
 
+/* MAIN CONTAINER */
 .app__container {
-    width: 80rem;
+    width: 82rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--transparentBackground);
 }
 
+/* TITLE */
 .app__title {
     backdrop-filter: blur(10px);
     position: fixed;
@@ -45,6 +46,7 @@ body {
     z-index: 100;
 }
 
+/* media query for responsiveness - START */
 @media (max-width: 900px) {
     html {
         font-size: 55%;
@@ -75,12 +77,12 @@ body {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     html {
         font-size: 28%;
     }
-
     .app__title {
         font-size: 2.6rem;
     }
 }
+/* media query for responsiveness - END */

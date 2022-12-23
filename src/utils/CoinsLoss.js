@@ -6,7 +6,7 @@ const Loss = memo(({ percentage }) => {
     <>
       {/* <div className="blur blur__1 blur__1--loss"></div>
       <div className="blur blur__2 blur__1--loss"></div> */}
-      <div className="coin__item coin__item-end coin__item-down">
+      <div className="table__item table__item-end table__item-loss table__item-24h">
         {percentage}%
       </div>
     </>

@@ -6,7 +6,7 @@ const Profit = memo(({ percentage }) => {
     <>
       {/* <div className="blur blur__1 blur__1--profit"></div>
       <div className="blur blur__2 blur__2--profit"></div> */}
-      <div className="coin__item coin__item-end coin__item-up">
+      <div className="table__item table__item-end table__item-profit table__item-24h">
         {percentage}%
       </div>
     </>
