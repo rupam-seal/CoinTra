@@ -20,18 +20,20 @@ const Table = memo(({ filterdCoins }) => {
   }
   const content = filterdCoins.map((coin, index) => {
     return (
-      <TableRow
-        id={coin.id}
-        index={index}
-        image={coin.image}
-        name={coin.name}
-        symbol={coin.symbol}
-        price={numberWithCommas(parseFloat(coin.current_price).toFixed(2))}
-        market={convertToInternationalCurrencySystem(coin.market_cap)}
-        volume={convertToInternationalCurrencySystem(coin.total_volume)}
-        price_24hr={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
-        price_7d={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
-      />
+      <div key={coin.id}>
+        <TableRow
+          id={coin.id}
+          index={index}
+          image={coin.image}
+          name={coin.name}
+          symbol={coin.symbol}
+          price={numberWithCommas(parseFloat(coin.current_price).toFixed(2))}
+          market={convertToInternationalCurrencySystem(coin.market_cap)}
+          volume={convertToInternationalCurrencySystem(coin.total_volume)}
+          price_24hr={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
+          price_7d={parseFloat(coin.price_change_percentage_24h).toFixed(2)}
+        />
+      </div>
     );
   });
   // ========= JSX =========
