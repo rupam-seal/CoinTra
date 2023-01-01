@@ -1,0 +1,21 @@
+/* MAIN CONTAINER */
+.home {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* media query for responsiveness - START */
+
+/* media query for responsiveness - END */

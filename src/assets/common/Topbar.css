@@ -1,0 +1,104 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
+    background-color: var(--transparentBackground);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--topbarBoxShadow)
+}
+
+.topbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120rem;
+    padding: 2rem;
+}
+
+.topbar__logo {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--colorProfit);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.topbar__logo-round {
+    width: 0.8rem;
+    height: 0.8rem;
+    border-color: var(--colorProfit);
+    border-width: 0.6rem;
+    border-radius: 2rem;
+    border-style: solid;
+    margin-right: 0.5rem;
+}
+
+.topbar__logo-highlight {
+    color: var(--colorSecondary);
+}
+
+.topbar__right {
+    display: flex;
+}
+
+.currency__selector {
+    background-color: var(--searchBg);
+    color: var(--colorSecondary);
+    margin-right: 3rem;
+    border-style: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+    box-shadow: var(--btnBoxShadow);
+}
+
+.currency__option {
+    cursor: pointer;
+    color: var(--colorSecondary);
+    background-color: var(--colorPrimary);
+}
+
+
+#darkMode {
+    position: relative;
+    cursor: pointer;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 1rem;
+    border-style: none;
+    background-color: var(--searchBg);
+    display: flex;
+    font-size: 1.8rem;
+    color: var(--colorSecondary);
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.35s;
+    box-shadow: var(--btnBoxShadow);
+}
+
+#darkMode:hover {
+    box-shadow: var(--btnBoxShadowHover);
+
+}
+
+/* media query for responsiveness - START */
+
+@media (max-width: 500px) {
+    .topbar__container {
+        padding: 1rem;
+    }
+
+    .topbar__title {
+        font-size: 1.8rem;
+    }
+}
+
+/* media query for responsiveness - END */

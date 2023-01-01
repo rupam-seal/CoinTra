@@ -1,7 +1,8 @@
 body.light {
     --colorPrimary: #f8fafd;
     --colorSecondary:#222531;
-    --colorSecondaryLight:rgb(57, 59, 66);
+    --colorSecondaryLight:#58667e;
+    --colorSecondaryExtraLight:#EFF2F5;
     --transparentBackground:rgba(248, 250, 253, 0.61);
     --topbarBoxShadow:rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
 
@@ -25,7 +26,8 @@ body.light {
 body.dark {
     --colorPrimary:rgb(27, 28, 32);
     --colorSecondary:#F9F9F9;
-    --colorSecondaryLight:#a5a5a5;
+    --colorSecondaryLight:#A1A7BB;
+    --colorSecondaryExtraLight:rgba(188, 188, 188, 0.1);
     --transparentBackground:rgba(27, 28, 32, 0.61);
     --topbarBoxShadow:rgba(214, 214, 214, 0.04) 0px 1px 0px, rgba(214, 214, 214, 0.25) 0px 1px 0px inset;
 

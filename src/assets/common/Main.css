@@ -1,0 +1,42 @@
+/* 
+1rem = 16px || 100%
+1px = 16/100 = 6.25%
+10px = 6.25%*10 = 62.5%
+Now
+1rem = 10px || 62.5%
+*/
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+  
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--colorPrimary);
+    /* 'Inter', */
+    font-family:  sans-serif;
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: var(--colorSecondary);
+    background: var(--colorProfit);
+  }
+  
+  ::selection {
+    color: var(--colorSecondary);
+    background: var(--colorProfit);
+  }
+
+
+  @media (max-width: 500px) {
+    body {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 6rem;
+    }
+}

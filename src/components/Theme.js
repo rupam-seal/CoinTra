@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MdDarkMode, MdOutlineLightMode } from 'react-icons/md';
+import { CryptoState } from '../utils/CryptoContext';
 
 const Theme = () => {
   let clickedClass = 'clicked';
@@ -9,6 +10,8 @@ const Theme = () => {
   let theme;
   let day = <MdDarkMode />;
   let night = <MdOutlineLightMode />;
+
+  const { setMode } = CryptoState();
 
   // getting localstorage theme
   if (localStorage) {
@@ -38,12 +41,14 @@ const Theme = () => {
     if (theme === darkTheme) {
       body.classList.replace(darkTheme, lightTheme);
       setIcon(day);
+      setMode('light');
       // e.target.classList.remove(clickedClass);
       localStorage.setItem('theme', 'light');
       theme = lightTheme;
     } else {
       body.classList.replace(lightTheme, darkTheme);
       setIcon(night);
+      setMode('dark');
       // e.target.classList.remove(clickedClass);
       localStorage.setItem('theme', 'dark');
       theme = darkTheme;

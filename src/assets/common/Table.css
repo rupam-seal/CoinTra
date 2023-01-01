@@ -12,6 +12,15 @@
     border-radius: 0.5rem;
 }
 
+.table__header {
+    line-height: 3.4rem;
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--colorSecondary);
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 .table__row-header:hover {
     background-color: var(--coinItemBg);
 }
@@ -57,7 +66,7 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: 400;
-    color: var(--colorSecondary);
+    color: var(--colorSecondaryLight);
     padding-right: 1rem;
 }
 
@@ -179,12 +188,31 @@
     padding-left: 1rem;
 }
 
+.col__3 .col__3-percentage {
+    display: none;
+}
+
 .col__profit {
+    display: flex;
+    align-items: center;
     color: var(--colorProfit);
 }
 
+
 .col__loss {
+    display: flex;
+    align-items: center;
     color: var(--colorLoss);
+}
+
+.col__arrow {
+    display: flex;
+    align-items: center;
+}
+
+.table__pagination {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* object blur below coin item - START */
@@ -229,10 +257,9 @@
 
 /* ===== media query for responsiveness - START ===== */
 @media (max-width: 800px) {
-    .col__3-percentage {
+    .col__3 .col__3-percentage {
         display: flex;
     }
-
     .col__2 {
         align-items: center;
     }
@@ -260,6 +287,13 @@
 }
 
 @media (max-width: 500px) {
+    .table__header {
+        text-align: center;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
     .table__row-body {
         padding: 1rem;
     }
@@ -272,8 +306,16 @@
         display: none;
     }
 
-    .col__2 {
+    .col__3 {
         font-size: 1.4rem;
+    }
+
+    .col__profit {
+        font-size: 1.3rem;
+    }
+
+    .col__loss {
+        font-size: 1.3rem;
     }
 
     .col__4-market {
@@ -281,7 +323,7 @@
     }
 
     .col__4-volume {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 }
 

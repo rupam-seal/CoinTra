@@ -1,8 +1,7 @@
-import React, { memo } from 'react';
-import '../css/Search.css';
+import React from 'react';
 import { RiSearch2Line } from 'react-icons/ri';
 
-const Search = memo(({ search, handleSearch }) => {
+const Search = ({ search, handleSearch }) => {
   return (
     <div className="search">
       <div className="search__input-container">
@@ -19,6 +18,6 @@ const Search = memo(({ search, handleSearch }) => {
       </div>
     </div>
   );
-});
+};
 
 export default Search;
