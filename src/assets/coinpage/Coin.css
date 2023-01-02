@@ -160,6 +160,10 @@
 }
 
 @media (max-width: 550px) {
+    .cards {
+        gap: 1rem;
+    }
+
     .item__info {
         display: flex;
         flex-direction: column;
