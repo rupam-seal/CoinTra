@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { CryptoState } from '../../utils/CryptoContext';
+import { CryptoState } from '../utils/CryptoContext';
 import TableRow from './TableRow';
 
 const Table = memo(({ filterdCoins, symbol, page, setPage }) => {

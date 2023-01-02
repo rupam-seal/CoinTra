@@ -5,7 +5,7 @@ import { SingleCoin } from '../config/api';
 // GLOBAL STATE
 import { CryptoState } from '../utils/CryptoContext';
 import { VscTriangleDown, VscTriangleUp } from 'react-icons/vsc';
-
+//     "build": "react-scripts build",
 const CoinPage = () => {
   // data state
   const [coin, setCoin] = useState();

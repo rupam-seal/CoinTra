@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { createTheme, Pagination, ThemeProvider } from '@mui/material';
 // COMPONENTS
-import Table from '../components/table/Table';
+import Table from '../components/Table';
 import Search from '../components/Search';
 // API
 import axios from 'axios';
