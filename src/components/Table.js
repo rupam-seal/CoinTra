@@ -2,13 +2,13 @@ import React, { memo } from 'react';
 import { CryptoState } from '../utils/CryptoContext';
 import TableRow from './TableRow';
 
-const Table = memo(({ filterdCoins, symbol, page, setPage }) => {
+const Table = memo(({ filterdCoins, symbol, page }) => {
   const { convertToInternationalCurrencySystem, numberWithCommas } =
     CryptoState();
   const content = filterdCoins
     // Slicing for pagination
     .slice((page - 1) * 20, (page - 1) * 20 + 20)
-    .map((coin, index) => {
+    .map((coin) => {
       return (
         <div key={coin.id}>
           {/* ========= TABLE RAW START ========= */}
