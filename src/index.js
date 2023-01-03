@@ -23,13 +23,13 @@ import CryptoContext from './utils/CryptoContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <CryptoContext>
+  <CryptoContext>
+    <Router>
       <Topbar />
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/coins/:id" element={<CoinPage />} />
       </Routes>
-    </CryptoContext>
-  </Router>
+    </Router>
+  </CryptoContext>
 );
