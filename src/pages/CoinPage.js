@@ -24,8 +24,7 @@ const CoinPage = () => {
       .catch((error) => {
         console.log(error);
       });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currency]);
+  }, [currency, id]);
   // ======== FETCH COIN ==========
 
   const { convertToInternationalCurrencySystem } = CryptoState();
