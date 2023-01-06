@@ -18,18 +18,18 @@ import './assets/homepage/Home.css';
 import './assets/homepage/Search.css';
 // single coins page css
 import './assets/coinpage/Coin.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CryptoContext from './utils/CryptoContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <CryptoContext>
-    <Router>
+    <BrowserRouter>
       <Topbar />
       <Routes>
         <Route path="/" element={<HomePage />} exact />
         <Route path="/coins/:id" element={<CoinPage />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   </CryptoContext>
 );
