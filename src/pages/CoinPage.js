@@ -212,8 +212,6 @@ const CoinPage = () => {
         </div>
       </>
     );
-  } else {
-    console.log('404');
   }
 };
 
