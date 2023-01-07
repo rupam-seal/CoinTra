@@ -60,41 +60,39 @@ const HomePage = () => {
     },
   });
 
-  if (filterdCoins !== undefined) {
-    return (
-      // JSX
-      // ========= app container start =========
-      <ThemeProvider theme={darkTheme}>
-        <div className="home">
-          <span className="table__header">
-            Today's Cryptocurrency Prices by Market Cap
-          </span>
-          {/* lifting the state up */}
-          <Search search={search} handleSearch={handleSearch} />
-          {/* passing filtered coins array to Coins component */}
-          <Table
-            filterdCoins={filterdCoins}
-            symbol={symbol}
-            page={page}
-            setPage={setPage}
+  return (
+    // JSX
+    // ========= app container start =========
+    <ThemeProvider theme={darkTheme}>
+      <div className="home">
+        <span className="table__header">
+          Today's Cryptocurrency Prices by Market Cap
+        </span>
+        {/* lifting the state up */}
+        <Search search={search} handleSearch={handleSearch} />
+        {/* passing filtered coins array to Coins component */}
+        <Table
+          filterdCoins={filterdCoins}
+          symbol={symbol}
+          page={page}
+          setPage={setPage}
+        />
+        {/* pagination */}
+        <div className="pagination">
+          <Pagination
+            count={Number((filterdCoins?.length / 20).toFixed(0))}
+            variant="outlined"
+            color="secondary"
+            onChange={(_, value) => {
+              setPage(value);
+              window.scroll(0, '450px');
+            }}
           />
-          {/* pagination */}
-          <div className="pagination">
-            <Pagination
-              count={Number((filterdCoins?.length / 20).toFixed(0))}
-              variant="outlined"
-              color="secondary"
-              onChange={(_, value) => {
-                setPage(value);
-                window.scroll(0, '450px');
-              }}
-            />
-          </div>
         </div>
-      </ThemeProvider>
-      // ========= app container end =========
-    );
-  }
+      </div>
+    </ThemeProvider>
+    // ========= app container end =========
+  );
 };
 
 export default HomePage;
