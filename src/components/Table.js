@@ -6,7 +6,8 @@ const Table = memo(({ filterdCoins, symbol, page }) => {
   const { convertToInternationalCurrencySystem, numberWithCommas } =
     CryptoState();
   const content = filterdCoins
-    ?.slice((page - 1) * 20, (page - 1) * 20 + 20)
+    // Slicing for pagination
+    // .slice((page - 1) * 20, (page - 1) * 20 + 20)
     .map((coin) => {
       return (
         <div key={coin.id}>

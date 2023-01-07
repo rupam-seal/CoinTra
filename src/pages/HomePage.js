@@ -78,7 +78,7 @@ const HomePage = () => {
           setPage={setPage}
         />
         {/* pagination */}
-        <div className="pagination">
+        {/* <div className="pagination">
           <Pagination
             count={Number((filterdCoins?.length / 20).toFixed(0))}
             variant="outlined"
@@ -88,7 +88,7 @@ const HomePage = () => {
               window.scroll(0, '450px');
             }}
           />
-        </div>
+        </div> */}
       </div>
     </ThemeProvider>
     // ========= app container end =========
