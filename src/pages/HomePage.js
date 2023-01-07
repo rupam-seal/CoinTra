@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { createTheme, Pagination, ThemeProvider } from '@mui/material';
 // COMPONENTS
 import Table from '../components/Table';
 import Search from '../components/Search';
@@ -49,48 +48,24 @@ const HomePage = () => {
 
   // console.log(mode);
 
-  const darkTheme = createTheme({
-    palette: {
-      // changed mode (dark/light)
-      // when main theme changed
-      mode: mode,
-      secondary: {
-        main: '#16C784',
-      },
-    },
-  });
-
   return (
     // JSX
     // ========= app container start =========
-    <ThemeProvider theme={darkTheme}>
-      <div className="home">
-        <span className="table__header">
-          Today's Cryptocurrency Prices by Market Cap
-        </span>
-        {/* lifting the state up */}
-        <Search search={search} handleSearch={handleSearch} />
-        {/* passing filtered coins array to Coins component */}
-        <Table
-          filterdCoins={filterdCoins}
-          symbol={symbol}
-          page={page}
-          setPage={setPage}
-        />
-        {/* pagination */}
-        {/* <div className="pagination">
-          <Pagination
-            count={Number((filterdCoins?.length / 20).toFixed(0))}
-            variant="outlined"
-            color="secondary"
-            onChange={(_, value) => {
-              setPage(value);
-              window.scroll(0, '450px');
-            }}
-          />
-        </div> */}
-      </div>
-    </ThemeProvider>
+    <div className="home">
+      <span className="table__header">
+        Today's Cryptocurrency Prices by Market Cap
+      </span>
+      {/* lifting the state up */}
+      <Search search={search} handleSearch={handleSearch} />
+      {/* passing filtered coins array to Coins component */}
+      <Table
+        filterdCoins={filterdCoins}
+        symbol={symbol}
+        page={page}
+        setPage={setPage}
+      />
+      {/* pagination */}
+    </div>
     // ========= app container end =========
   );
 };
