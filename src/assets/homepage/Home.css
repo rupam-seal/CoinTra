@@ -16,6 +16,12 @@
     margin-bottom: 3rem;
 }
 
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* media query for responsiveness - START */
 
 /* media query for responsiveness - END */

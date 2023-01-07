@@ -1,12 +1,12 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { SingleCoin } from '../config/api';
 // GLOBAL STATE
 import { CryptoState } from '../utils/CryptoContext';
 import { VscTriangleDown, VscTriangleUp } from 'react-icons/vsc';
 //     "build": "react-scripts build",
-const CoinPage = () => {
+const CoinPage = memo(() => {
   // data state
   const [coin, setCoin] = useState();
   // get coin id
@@ -207,12 +207,10 @@ const CoinPage = () => {
               </div>
             </div>
           </div>
-
-          {/* <ChartsInfo coin={coin} /> */}
         </div>
       </>
     );
   }
-};
+});
 
 export default CoinPage;
