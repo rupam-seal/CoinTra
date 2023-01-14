@@ -8,6 +8,7 @@ body.light {
 
     --colorProfit:#16C784;
     --colorLoss:#EA3943;
+    --colorViolate: rgb(176, 135, 255);
 
     --coinItemBg:#fff;
     --coinItemHover:rgba(255, 255, 255, 0.4);
@@ -33,6 +34,7 @@ body.dark {
 
     --colorProfit:#16C784;
     --colorLoss:#EA3943;
+    --colorViolate: rgb(176, 135, 255);
 
     --coinItemBg:rgb(23,23,26);
     --coinItemHover:rgb(26, 27, 30);
