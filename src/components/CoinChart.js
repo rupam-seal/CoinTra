@@ -16,6 +16,7 @@ import {
 import { Line } from 'react-chartjs-2';
 import moment from 'moment/moment';
 import { CryptoState } from '../utils/CryptoContext';
+import { chartDays } from '../config/data';
 
 ChartJS.register(
   CategoryScale,
@@ -31,6 +32,7 @@ ChartJS.register(
 const CoinChart = ({ id }) => {
   const [coin, setCoin] = useState();
   const [days, setDays] = useState(30);
+  const [active, setActive] = useState(1);
 
   const { currency } = CryptoState();
 
@@ -96,7 +98,25 @@ const CoinChart = ({ id }) => {
       <span className="chart__header">
         {capitalizeFirstLetter(id)} to {currency.toUpperCase()} Chart
       </span>
-      <Line options={options} data={data} width="100%" />
+      <div className="chart__toggle-container">
+        <div className="chart__toggle">
+          {chartDays.map((day) => (
+            <div
+              className={active == day.value ? 'active' : 'toggle'}
+              key={day.value}
+              onClick={() => {
+                setDays(day.value);
+                setActive(day.value);
+              }}
+            >
+              {day.label}
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="chart__canvas">
+        <Line options={options} data={data} width="100%" />
+      </div>
     </div>
   );
 };

@@ -25,12 +25,12 @@ body {
 ::-moz-selection {
     /* Code for Firefox */
     color: var(--colorSecondary);
-    background: var(--colorProfit);
+    background: var(--colorViolate);
   }
   
   ::selection {
     color: var(--colorSecondary);
-    background: var(--colorProfit);
+    background: var(--colorViolate);
   }
 
 
