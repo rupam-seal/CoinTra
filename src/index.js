@@ -11,7 +11,7 @@ import './assets/common/Topbar.css';
 import './assets/homepage/Home.css';
 import './assets/homepage/Search.css';
 // single coins page css
-import './assets/coinpage/Coin.css';
+import './assets/coinpage/CoinPage.css';
 
 import CryptoContext from './utils/CryptoContext';
 import App from './App';

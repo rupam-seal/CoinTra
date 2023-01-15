@@ -5,6 +5,7 @@ import { SingleCoin } from '../config/api';
 // GLOBAL STATE
 import { CryptoState } from '../utils/CryptoContext';
 import { VscTriangleDown, VscTriangleUp } from 'react-icons/vsc';
+import CoinChart from '../components/CoinChart';
 //     "build": "react-scripts build",
 const CoinPage = memo(() => {
   // data state
@@ -207,6 +208,7 @@ const CoinPage = memo(() => {
               </div>
             </div>
           </div>
+          <CoinChart id={id} />
         </div>
       </>
     );
