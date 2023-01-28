@@ -43,7 +43,7 @@ const Table = memo(({ filterdCoins, symbol, page, setPage }) => {
       // when main theme changed
       mode: mode,
       secondary: {
-        main: '#16C784',
+        main: 'rgb(176, 135, 255)',
       },
     },
   });
