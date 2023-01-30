@@ -1,7 +1,7 @@
 .item {
     width: 100%;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
@@ -120,8 +120,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 .card {
@@ -160,17 +160,23 @@
     font-weight: 500;
 }
 
+.chart {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .chart__header {
     line-height: 3.4rem;
     font-weight: 600;
     font-size: 2rem;
     color: var(--colorSecondary);
-    margin-top: 2rem;
-    margin-bottom: 1.5rem;
 }
 
 .chart__toggle-container {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .chart__toggle {
@@ -226,5 +232,9 @@
 
     .chart__canvas {
         height: 40vh;
+    }
+
+    .chart__toggle-container {
+        flex-direction: column;
     }
 }

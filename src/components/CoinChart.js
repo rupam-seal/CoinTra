@@ -95,10 +95,10 @@ const CoinChart = ({ id }) => {
 
   return (
     <div className="chart">
-      <span className="chart__header">
-        {capitalizeFirstLetter(id)} to {currency.toUpperCase()} Chart
-      </span>
       <div className="chart__toggle-container">
+        <span className="chart__header">
+          {capitalizeFirstLetter(id)} to {currency.toUpperCase()} Chart
+        </span>
         <div className="chart__toggle">
           {chartDays.map((day) => (
             <div
