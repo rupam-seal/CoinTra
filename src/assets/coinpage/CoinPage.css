@@ -223,4 +223,8 @@
         align-items: center;
         justify-content: center;
     }
+
+    .chart__canvas {
+        height: 40vh;
+    }
 }
