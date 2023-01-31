@@ -22,6 +22,30 @@ body {
     padding-right: 2rem;
 }
 
+.privacy {
+  background-color: var(--colorPrivacy);
+  padding: 2rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: var(--colorPrimary);
+  font-size: 1.2rem;
+  font-weight: 500;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6rem;
+  transition: opacity 0.35s;
+}
+
+.privacy__close {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
 ::-moz-selection {
     /* Code for Firefox */
     color: var(--colorSecondary);

@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import CoinPage from './pages/CoinPage';
 // COMPONENTS
 import Topbar from './components/Topbar';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} exact />
         <Route path="/coins/:id" element={<CoinPage />} />
       </Routes>
+      <PrivacyPolicy />
     </BrowserRouter>
   );
 };
