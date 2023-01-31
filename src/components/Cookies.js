@@ -22,6 +22,7 @@ const Cookies = () => {
   const close = () => {
     const privacy = document.getElementById('privacy');
     privacy.style.opacity = 0;
+    setTimeout(() => (privacy.style.display = 'none'), 1000);
   };
   return (
     <>
