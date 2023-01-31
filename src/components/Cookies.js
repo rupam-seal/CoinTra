@@ -12,7 +12,7 @@ const containerVariants = {
   },
 };
 
-const PrivacyPolicy = () => {
+const Cookies = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
@@ -51,4 +51,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default Cookies;
