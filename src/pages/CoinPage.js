@@ -30,7 +30,13 @@ const CoinPage = memo(() => {
 
   const { convertToInternationalCurrencySystem } = CryptoState();
 
-  console.log(coin);
+  console.log(coin?.description['en']);
+
+  function removeTags(str) {
+    if (str === null || str === '') return false;
+    else str = str.toString();
+    return str.replace(/(<([^>]+)>)/gi, '');
+  }
 
   // ======== FETCH COINLIST ==========
 
@@ -209,6 +215,12 @@ const CoinPage = memo(() => {
             </div>
           </div>
           <CoinChart id={id} />
+          <p className="chart__header">
+            What is {coin?.name} ({coin?.symbol.toUpperCase()})?
+          </p>
+          <p className="coin__description">
+            {removeTags(coin?.description['en'])}
+          </p>
         </div>
       </>
     );

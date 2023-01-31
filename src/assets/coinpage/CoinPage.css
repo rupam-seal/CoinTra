@@ -169,7 +169,7 @@
 .chart__header {
     line-height: 3.4rem;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: var(--colorSecondary);
 }
 
@@ -187,6 +187,17 @@
     padding: 0.6rem;
     gap: 1rem;
     border-radius: 1rem;
+}
+
+.coin__description {
+    font-size: 1.6rem;
+    color: var(--colorSecondaryLight);
+    text-size-adjust: 100%;
+    line-height: 1.5;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    text-align: justify;
 }
 
 .toggle {
