@@ -8,7 +8,7 @@ A cryptocurrency finance price tracker app using React Hook (useEffect, useState
 ## Tech Stack
 
 - Language: Javascript, HTML, CSS
-- Framework: React
+- Library: React
 - API: CoinGecko
 
 ## Installation
