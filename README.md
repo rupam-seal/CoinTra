@@ -1,5 +1,9 @@
 # CoinTra
-A cryptocurrency finance price tracker app using React Hook (useEffect, useState) and Axios
+<p>
+CoinTra is a website that displays the real-time value of the top 400 Cryptocurrencies along with their price, price change percentage, market cap value, volume, and other key metrics of cryptocurrencies. It also allows the user to search for a particular Coin.<br/>
+
+The website is built with Coingecko API, By using this API, the website can provide users with real-time information about the latest cryptocurrency prices and market trends.
+</p>
 
 ## Live Site
 
@@ -8,7 +12,7 @@ A cryptocurrency finance price tracker app using React Hook (useEffect, useState
 ## Tech Stack
 
 - Language: Javascript, HTML, CSS
-- Library: React
+- Library: React, Axios
 - API: CoinGecko
 
 ## Installation
@@ -23,6 +27,13 @@ Go to the project directory
 
 ```bash
   cd cryptocurrency-price-tracker
+
+```
+
+Install Dependencies
+
+```bash
+  npm install
 
 ```
 
