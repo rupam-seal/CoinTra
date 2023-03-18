@@ -51,6 +51,6 @@ Run server
 
 <br>
 
-## 💁‍♂️💁‍♀️ Support
+## 💁‍♂️Support💁‍♀️
 
 For support, email rupam.seal.00.00@gmail.com
