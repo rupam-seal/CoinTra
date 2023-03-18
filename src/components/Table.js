@@ -4,8 +4,11 @@ import TableRow from './TableRow';
 import { createTheme, Pagination, ThemeProvider } from '@mui/material';
 
 const Table = memo(({ filterdCoins, symbol, page, setPage }) => {
-  const { convertToInternationalCurrencySystem, numberWithCommas, mode } =
-    CryptoState();
+  const {
+    convertToInternationalCurrencySystem,
+    numberWithCommas,
+    mode = 'light',
+  } = CryptoState();
   const content = filterdCoins
     // Slicing for pagination
     .slice((page - 1) * 20, (page - 1) * 20 + 20)

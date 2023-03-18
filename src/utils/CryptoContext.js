@@ -7,7 +7,7 @@ const CryptoContext = ({ children }) => {
   const [symbol, setSymbol] = useState('$');
 
   // ========== access theme value globally ==========
-  // 1: change the style of pagination(material)
+  // change the style of pagination(material)
   let theme;
   // getting localstorage theme
   if (localStorage) {

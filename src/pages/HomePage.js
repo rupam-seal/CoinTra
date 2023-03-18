@@ -17,7 +17,7 @@ const HomePage = () => {
   const [page, setPage] = useState(1);
 
   // global state
-  const { currency, symbol, mode } = CryptoState();
+  const { currency, symbol } = CryptoState();
 
   // ======== FETCH COINLIST ==========
   useEffect(() => {

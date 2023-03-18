@@ -46,12 +46,12 @@ const CoinChart = ({ id }) => {
       .get(HistoricalChart(id, days, currency))
       .then((request) => {
         setCoin(request.data);
-        console.log(coin);
+        // console.log(coin);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [currency, days]);
+  }, [currency, days, id]);
 
   const coinChartData = coin?.prices.map((value) => ({
     x: value[0],
@@ -102,7 +102,7 @@ const CoinChart = ({ id }) => {
         <div className="chart__toggle">
           {chartDays.map((day) => (
             <div
-              className={active == day.value ? 'active' : 'toggle'}
+              className={active === day.value ? 'active' : 'toggle'}
               key={day.value}
               onClick={() => {
                 setDays(day.value);
