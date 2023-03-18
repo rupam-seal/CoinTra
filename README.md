@@ -1,4 +1,4 @@
-# CoinTra
+# CoinTra 🪙
 <p>
 CoinTra is a website that displays the real-time value of the top 400 Cryptocurrencies along with their price, price change percentage, market cap value, volume, and other key metrics of cryptocurrencies. It also allows the user to search for a particular Coin.<br/>
 
