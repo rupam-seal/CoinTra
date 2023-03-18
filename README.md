@@ -5,17 +5,17 @@ CoinTra is a website that displays the real-time value of the top 400 Cryptocurr
 The website is built with Coingecko API, By using this API, the website can provide users with real-time information about the latest cryptocurrency prices and market trends.
 </p>
 
-## Live Site
+## 🚨 Live Site
 
 - https://cointra.netlify.app/
 
-## Tech Stack
+## 🦾 Tech Stack
 
 - Language: Javascript, HTML, CSS
 - Library: React, Axios
 - API: CoinGecko
 
-## Installation
+## ⚗️ Installation
 
 Clone the project
 
@@ -43,6 +43,6 @@ Run server
   npm start
 ```
 
-## Support
+## 💁‍♂️💁‍♀️ Support
 
 For support, email rupam.seal.00.00@gmail.com
