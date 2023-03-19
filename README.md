@@ -29,6 +29,8 @@ Clone the project
   https://github.com/rupam-seal/cryptocurrency-price-tracker.git
 ```
 
+<br>
+
 Go to the project directory
 
 ```bash
@@ -36,12 +38,16 @@ Go to the project directory
 
 ```
 
+<br>
+
 Install Dependencies
 
 ```bash
   npm install
 
 ```
+
+<br>
 
 Run server
 
