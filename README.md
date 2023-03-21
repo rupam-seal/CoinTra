@@ -13,7 +13,7 @@ The website is built with Coingecko API, By using this API, the website can prov
 
 <br>
 
-## 🦾 Tech Stack
+## 🦾 Tools used
 
 - Language: Javascript, HTML, CSS
 - Library: React, Axios
