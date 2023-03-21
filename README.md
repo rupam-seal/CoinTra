@@ -26,7 +26,7 @@ The website is built with Coingecko API, By using this API, the website can prov
 Clone the project
 
 ```bash
-  https://github.com/rupam-seal/cryptocurrency-price-tracker.git
+  git clone https://github.com/rupam-seal/cryptocurrency-price-tracker.git
 ```
 
 <br>
