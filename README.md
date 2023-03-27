@@ -13,6 +13,11 @@ The website is built with Coingecko API, By using this API, the website can prov
 
 <br>
 
+## 🕹️ Demo
+<img src="https://user-images.githubusercontent.com/72932336/228005603-46558976-8be2-4a92-a880-68f3de8b02e8.png" width="700"/>
+
+<br>
+
 ## 🦾 Tools used
 
 - Language: Javascript, HTML, CSS
